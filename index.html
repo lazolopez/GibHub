@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            .video-container {
+                position: relative;
+                /* Proporción 16:9 */
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                margin: 1rem auto;
+                border: none;
+            }
+
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+        </style>
+        <title>Audio y video</title>
+    </head>
+    <body>
+        <header>
+            <h1>Edicion de videos y audio</h1>
+        </header>
+        <nav></nav>
+        <main>
+            <article>
+                <h2>Presentacion de video</h2>
+                <p>Trailer 2 de <strong>GTA 6</strong> 
+                    <div class="video-container">
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/VQRLujxTm3c" title="Grand Theft Auto VI Trailer 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </p>
+            </article>
+            <article>
+                <h2>Presentacion de audio</h2>
+                <p>Auido de sirenas de la policia</p>
+                <audio src="assets/audio/sirena-policia.mp3" controls></audio>
+                <p>audio descargado en <a href="https://sonidosmp3gratis.com/download.php?id=2306&sonido=sirena+policia">sonidosmp3gratis</a></p>
+            </article>
+        </main>
+        <footer></footer>
+    </body>
+</html>
